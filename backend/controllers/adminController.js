@@ -42,25 +42,8 @@ const addDoctor = async (req,res) => {
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password, salt)
 
-        if (!imageFile) {
-            return res.json({
-                success: false,
-                message: "Image file is required",
-            })
-        }
-
-        console.log("FILE =>", imageFile)
-        console.log("PATH =>", imageFile.path)
-
-        const normalizedPath = imageFile.path.replace(/\\/g, '/')
-
         // upload image to cloudinary
-        const imageUpload = await cloudinary.uploader.upload(normalizedPath, {
-            resource_type: 'image',
-            folder: 'doctors',
-            use_filename: true,
-            unique_filename: false,
-        })
+        const imageUpload = await cloudinary.uploader.upload(imageFile.path, {resource_type:"image"})
         const imageUrl = imageUpload.secure_url
 
         const doctorData = {
@@ -85,16 +68,8 @@ const addDoctor = async (req,res) => {
 
 
     } catch (error) {
-        console.error('Cloudinary upload error:', error)
-        console.error('ERROR =>', error)
-        console.error('MESSAGE =>', error.message)
-        console.error('HTTP CODE =>', error.http_code ?? error.status_code)
-        console.error('STACK =>', error.stack)
 
-        res.json({
-            success: false,
-            message: error.message || 'Cloudinary upload failed',
-        })
+       res.json({success:false,message:error.message})
     }
 }
 
