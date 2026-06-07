@@ -4,6 +4,8 @@ import 'dotenv/config'
 import connectDB from './config/mongodb.js'
 import connectCloudinary from './config/cloudinary.js'
 import adminRouter from './routes/adminRoute.js'
+import doctorRouter from './routes/doctorRoute.js'
+import userRouter from './routes/userRoute.js'
 
 
 // app config
@@ -18,6 +20,8 @@ app.use(cors())
 
 // api endpoints
 app.use('/api/admin', adminRouter)
+app.use('/api/doctor',doctorRouter)
+app.use('/api/user', userRouter)
 
 
 app.get('/',(req, res) => {
@@ -25,3 +29,5 @@ app.get('/',(req, res) => {
 })
 
 app.listen(port, () => console.log("Server Started",port))
+
+//welcome to the party joey chandler ross monica phoebe 
