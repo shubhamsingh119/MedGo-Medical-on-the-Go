@@ -5,7 +5,7 @@ It includes a polished patient-facing frontend, a dedicated admin panel for doct
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 MedGo helps patients discover doctors by specialization, book appointments, manage appointments, and pay online.
 Admins can add doctors, manage appointments, and track clinic performance through a clean, responsive dashboard.
@@ -18,7 +18,7 @@ Key modules:
 
 ---
 
-## 🎯 What Makes MedGo Great
+## What Makes MedGo Great
 
 - Patient registration and login
 - Doctor listing by specialty
@@ -31,7 +31,7 @@ Key modules:
 
 ---
 
-## ✨ Features
+## Features
 
 ### Patient Portal
 
@@ -60,7 +60,7 @@ Key modules:
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - Frontend: React, Vite, Tailwind CSS, React Router, React Toastify, Axios
 - Backend: Node.js, Express, MongoDB, Mongoose, JWT, bcrypt
@@ -71,7 +71,7 @@ Key modules:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 - `frontend/` — Patient-facing website
 - `admin/` — Admin and doctor portal
@@ -147,7 +147,7 @@ npm run dev
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 
 - **Home Page**
@@ -169,7 +169,7 @@ npm run dev
 
 ---
 
-## 💡 Notes
+## Notes
 
 - Backend connects to MongoDB at `${process.env.MONGODB_URI}/MedGo`
 - Cloudinary image uploads require valid Cloudinary credentials
@@ -178,7 +178,7 @@ npm run dev
 
 ---
 
-## 🙌 Contribution
+## Contribution
 
 Feel free to improve MedGo by adding features such as:
 
