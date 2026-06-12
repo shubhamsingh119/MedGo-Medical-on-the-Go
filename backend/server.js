@@ -15,13 +15,7 @@ connectCloudinary()
 
 // middleware
 app.use(express.json())
-app.use(cors({
-  origin: [
-    'https://med-go-medical-on-the-go-hufo.vercel.app',
-    'https://YOUR-ADMIN-URL.vercel.app'
-  ],
-  credentials: true
-}))
+app.use(cors())
 
 // api endpoints
 app.use('/api/admin', adminRouter)
