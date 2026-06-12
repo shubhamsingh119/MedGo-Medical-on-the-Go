@@ -5,6 +5,14 @@ It includes a polished patient-facing frontend, a dedicated admin panel for doct
 
 ---
 
+## 🌐 Live Demo
+
+**[ Visit MedGo](https://med-go-medical-on-the-go-hufo.vercel.app)**
+
+Try the live application now! Book an appointment, explore doctors by specialty, and experience the full healthcare booking workflow.
+
+---
+
 ## Project Overview
 
 MedGo helps patients discover doctors by specialization, book appointments, manage appointments, and pay online.
@@ -148,7 +156,6 @@ npm run dev
 ---
 
 ## Screenshots
-
 
 - **Home Page**
   ![Home Page](frontend/src/assets/Homess.png)
