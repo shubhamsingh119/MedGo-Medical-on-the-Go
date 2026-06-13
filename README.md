@@ -168,11 +168,11 @@ npm run dev
 - **Add Doctor**
   ![Add Doctor](admin/src/assets/AddDoctorss.png)
 - **All Appointments**
-  ![All Appointments](admin/src/assets/appointments_icon.svg)
+  ![All Appointments](admin/src/assets/AllAppointmentsss.svg)
 - **Doctor Dashboard**
-  ![Doctor Dashboard](admin/src/assets/hero.png)
+  ![Doctor Dashboard](admin/src/assets/DoctorDashboardss.png)
 - **Doctor Profile**
-  ![Doctor Profile](admin/src/assets/doctor_icon.svg)
+  ![Doctor Profile](admin/src/assets/DoctorProfiless.svg)
 
 ---
 
