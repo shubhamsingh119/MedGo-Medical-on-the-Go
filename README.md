@@ -24,6 +24,7 @@ Key modules:
 - `admin/` — admin/doctor dashboard built with React + Vite + Tailwind CSS
 - `backend/` — Express.js API, MongoDB, authentication, Cloudinary and Razorpay support
 
+
 ---
 
 ## What Makes MedGo Great
